@@ -1,0 +1,12 @@
+Model_name,Params, threshold, sharpe, utility_score
+xgb classifier action,On predict proba, 0.52, 3.4930855431485526, 2242.4576498682845
+xgb classifier action,On predict proba,applied different ranges of thresholds, 4.165148684114153, 2558.9381415016956
+mlp_regressor_sigmoid_resp_256_10_0.01, On sigmoid resp, applied different ranges of thresholds, 3.290110,1752.775 
+
+xgb_clf_weights_more_than_zero, Took weights more than zero and trained normal model , 0.52,3.3032083155267014, 1789.7500
+xgb_clf_weight_more_than_0.6, Took weights more than 0.6 only , 0.522, 3.7369484849954824 , 2192.4537
+xgb_clf_weight_more_than_0.4, Took weights more than 0.4 only , 0.516, 3.951580298111714, 2820.54953
+xgb_clf_weights_more_than_0.2, , 0.524, 3.632478044333536, 2034.52221954791
+xgb_clf_weights_more_than_0.3, , 0.5150000000000001, 3.3674062310241015, 1943.5416281323983
+xgb_clf_weights_more_than_1, , 0.525, 3.232156963956469, 1553.2408600604033
+
