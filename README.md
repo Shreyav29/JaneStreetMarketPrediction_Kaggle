@@ -72,8 +72,9 @@ Moreover, we see that the return values may be coming from different distributio
 I take these trades which have a magnitude of return close to 0 and I model them together. Then I take the remaining trades and train a different model. 
 
 
-<img src= "Images/Screenshot 2021-01-16 at 9.11.43 AM.png" width = '70'>. 
-<img src= "Images/Screenshot 2021-01-16 at 9.11.51 AM.png" width = '70'>. 
+<img src= "Images/Screenshot 2021-01-16 at 9.11.43 AM.png" width = '150'>. 
+
+<img src= "Images/Screenshot 2021-01-16 at 9.11.51 AM.png" width = '150'>. 
 
 
 ## Results 
