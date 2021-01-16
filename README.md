@@ -1,14 +1,15 @@
 # JaneStreetMarketPrediction_Kaggle
 I am participating in the Jane Street Market Prediction Kaggle challenge : https://www.kaggle.com/c/jane-street-market-prediction
 
-# Description 
+## Data Description 
 In this competiton we are given 500 days of historical stock market trading data and the objective is to build a quantitative trading model that maximises the utility. This is the trading data that is given, and each date is represented by numbers from 0 to 500, and each day has thousands of trades at different time stamps given by the ts_id.We also have a weight and return corresponding to each trade. Here resp is nothing but returns of the trade. We also have 130 features related to each trade but we donot know their meaning as their names are masked. 
 
 And finally our aim is to predict the action, whch is to trade or not trade. 
 
-# The returns of the portfolio is defined by this utility score given by Jane Street. 
+## The returns of the portfolio is defined by this utility score given by Jane Street. 
+<img src= "Images/utility.png">
 
-# EDA 
+## EDA 
 
 <img src= "Images/Cumulative Returns and Weighted Returns.png">
 
