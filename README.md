@@ -26,7 +26,8 @@ The second diagram shows the feature correlations between the 130 features. The 
 2) Created Action column in the training data : 
 	Action = 1 if return > 0 
 	Action = 0 if return < 0 
-I first defined the problem to be a classification problem, where I will be using all the input data given to predict the action taken for each trade, as 0 or 1. Here 0 is that we donot take any action and 1 is that we take an action on the trade
+	
+- I first defined the problem to be a classification problem, where I will be using all the input data given to predict the action taken for each trade, as 0 or 1. Here 0 is that we donot take any action and 1 is that we take an action on the trade
 So in the original data I added a column called Action which is 1 when returns is positive and zero otherwise. I did this because our daily return which is a product of weight return and action is positive only when return is positive. 
 
 3) Trained the XGB Classifier 
@@ -34,7 +35,7 @@ So in the original data I added a column called Action which is 1 when returns i
 	Action = 1 if Prob > Threshold 
 	Action = 0 if Prob < Threshold 
   
-Using this I trained a simple XGB classifier model with inputs as all the 130 features and output as Action. 
+- Using this I trained a simple XGB classifier model with inputs as all the 130 features and output as Action. 
 
 <img src= "Images/probability_histogram (1).png">
 
@@ -44,4 +45,5 @@ After analysing the first model , I realized that the threshold that we are tuni
 
 Using this I got a threshold pf 0.527. I used this threshold on the test set to get a utility score of 1220.64 
 So now this is my benchmark score. 
+
 #### Score = 1220.64 for Th = 0.527
