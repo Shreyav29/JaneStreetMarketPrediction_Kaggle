@@ -54,8 +54,10 @@ So now this is my benchmark score.
 After anlysing my model1 , I realized that the aroud 60% of the trades have weights less than 0.4 but these 60% trades only contribute to 3% of the utility score. This means that the utility score is extremely dependent on the high weighted trades. So, I decided to train the model only on those trades where the weights are high, because the low weight trades are anyways not going to change my model score. 
 
 And this idea led to my second model 
-<img src= "Images/Screenshot 2021-01-16 at 9.09.49 AM.png">. 
-<img src= "Images/Screenshot 2021-01-16 at 9.09.58 AM.png">. 
+
+<img src= "Images/Screenshot 2021-01-16 at 9.09.49 AM.png" width = '600'> 
+
+<img src= "Images/Screenshot 2021-01-16 at 9.09.58 AM.png" width = '600'> 
 
 
 
@@ -78,7 +80,7 @@ I take these trades which have a magnitude of return close to 0 and I model them
 
 
 ## Results 
-<img src= "Images/Screenshot 2021-01-16 at 9.12.04 AM.png">. 
+<img src= "Images/Screenshot 2021-01-16 at 9.12.04 AM.png" width = '600'>. 
 I observed that the threshold values for all of these models are prettu robust around 0.52. 
 This shows that the EDA and the corresponding analysis helped me to improve the models significantly. 
 
