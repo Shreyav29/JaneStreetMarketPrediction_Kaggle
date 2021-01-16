@@ -47,3 +47,48 @@ Using this I got a threshold pf 0.527. I used this threshold on the test set to 
 So now this is my benchmark score. 
 
 #### Score = 1220.64 for Th = 0.527
+
+## Weights Distribution analysis 
+
+<img src= "Images/Weights Distribution.png">
+After anlysing my model1 , I realized that the aroud 60% of the trades have weights less than 0.4 but these 60% trades only contribute to 3% of the utility score. This means that the utility score is extremely dependent on the high weighted trades. So, I decided to train the model only on those trades where the weights are high, because the low weight trades are anyways not going to change my model score. 
+
+And this idea led to my second model 
+<img src= "Images/Screenshot 2021-01-16 at 9.09.49 AM.png">. 
+<img src= "Images/Screenshot 2021-01-16 at 9.09.58 AM.png">. 
+
+
+
+
+## Returns Distribution analysis 
+
+<img src= "Images/Histogram of Trade Returns.png">
+In order to further study the data and the model, I analyzed the return values. We can observe that the returns are highly concentrated around 0, and that more than 95% of the data lies in a very small interval around 0. 
+
+Note that, we are defining this problem as a classification problem, by arbitrarily assigning action =1 when return > 0 in the training data. Since return could be noisy, this arbitrary classification based on return values leads to two classes with a lot of overlap. Performing classification on such highly overlapped classes is not an easy task.
+
+Moreover, we see that the return values may be coming from different distributions, because the trades can correspond to different asset classes. Training a model on data with different distributions is not very fruitful. 
+
+I take these trades which have a magnitude of return close to 0 and I model them together. Then I take the remaining trades and train a different model. 
+
+
+<img src= "Images/Screenshot 2021-01-16 at 9.11.43 AM.png">. 
+<img src= "Images/Screenshot 2021-01-16 at 9.11.51 AM.png">. 
+
+
+## Results 
+<img src= "Images/Screenshot 2021-01-16 at 9.12.04 AM.png">. 
+I observed that the threshold values for all of these models are prettu robust around 0.52. 
+This shows that the EDA and the corresponding analysis helped me to improve the models significantly. 
+
+But one drawback in these models is the low precision scores. 
+
+
+
+
+
+
+
+
+
+
