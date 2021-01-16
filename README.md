@@ -11,7 +11,7 @@ And finally our aim is to predict the action, whch is to trade or not trade.
 
 ## EDA 
 
-<img src= "Images/Cumulative Returns and Weighted Returns.png">. <img src= "Images/Feature Correlations.png">
+<img src= "Images/Cumulative Returns and Weighted Returns.png"> <img src= "Images/Feature Correlations.png">
 
 Firstly lets look at some EDA plots. So as the data is huge, I have looked at several things during my EDA, but keeping the time in mind, I will be mentioning only some of the interesting ones now. As we go ahead with the model development part, I will discuss more things in detail. 
 
