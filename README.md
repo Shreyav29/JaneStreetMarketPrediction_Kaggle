@@ -80,11 +80,12 @@ I take these trades which have a magnitude of return close to 0 and I model them
 
 
 ## Results 
-<img src= "Images/Screenshot 2021-01-16 at 9.12.04 AM.png" width = '600'>. 
-I observed that the threshold values for all of these models are prettu robust around 0.52. 
-This shows that the EDA and the corresponding analysis helped me to improve the models significantly. 
+<img src= "Images/Screenshot 2021-01-16 at 9.12.04 AM.png" width = '600'>
 
-But one drawback in these models is the low precision scores. 
+- I observed that the threshold values for all of these models are prettu robust around 0.52. 
+- This shows that the EDA and the corresponding analysis helped me to improve the models significantly. 
+
+- But one drawback in these models is the low precision scores. 
 
 
 
